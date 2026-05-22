@@ -84,6 +84,43 @@
             padding: 0 var(--gutter);
         }
 
+        /* ── Announcement banner ─────────────────────────────────────────── */
+        .announce {
+            background: var(--ink);
+            color: var(--cream);
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+        }
+        .announce .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            padding: 0.65rem var(--gutter);
+        }
+        .announce a {
+            color: var(--cream);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(250, 246, 238, 0.4);
+            padding-bottom: 1px;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        .announce a:hover {
+            color: var(--accent-soft);
+            border-color: var(--accent-soft);
+        }
+        .announce .item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+        .announce .item .pin {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
         /* ── Top bar ──────────────────────────────────────────────────────── */
         .topbar {
             position: sticky;
@@ -660,6 +697,19 @@
     </style>
 </head>
 <body>
+
+<div class="announce">
+    <div class="wrap">
+        <span class="item">
+            <span class="pin">▸</span>
+            <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/CBW">The OpenReview submission portal is open until June 23, 2026.</a>
+        </span>
+        <span class="item">
+            <span class="pin">✉</span>
+            <a href="mailto:colm-context-beyond-window@googlegroups.com">colm-context-beyond-window@googlegroups.com</a>
+        </span>
+    </div>
+</div>
 
 <div class="topbar">
     <div class="wrap">
