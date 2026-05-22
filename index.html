@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         /* ── Design tokens ────────────────────────────────────────────────── */
@@ -25,7 +25,7 @@
             --accent:      #D6502A;
             --accent-soft: #E97D55;
 
-            --font-display: 'Fraunces', 'Times New Roman', serif;
+            --font-display: 'IBM Plex Serif', 'Iowan Old Style', 'Charter', Georgia, serif;
             --font-body:    'IBM Plex Sans', system-ui, sans-serif;
             --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
 
@@ -53,12 +53,12 @@
         }
         h1, h2, h3, h4 {
             font-family: var(--font-display);
-            font-weight: 600;
+            font-weight: 500;
             color: var(--ink);
-            letter-spacing: -0.015em;
-            line-height: 1.1;
+            letter-spacing: -0.012em;
+            line-height: 1.15;
             margin: 0;
-            font-variation-settings: 'opsz' 144, 'SOFT' 30;
+            font-variation-settings: normal;
         }
         p, li { max-width: 65ch; }
         a {
@@ -170,64 +170,23 @@
             border-radius: 50%;
             display: inline-block;
         }
-        /* Title with "window" frame around "Context" */
         .hero-title {
             font-family: var(--font-display);
             font-weight: 500;
-            font-size: clamp(3.2rem, 9vw, 7.5rem);
-            line-height: 0.95;
-            letter-spacing: -0.035em;
+            font-size: clamp(2.6rem, 7vw, 5.5rem);
+            line-height: 1.0;
+            letter-spacing: -0.025em;
             margin: 0;
-            font-variation-settings: 'opsz' 144, 'SOFT' 60;
-        }
-        .hero-title .window {
-            display: inline-block;
-            position: relative;
-            padding: 0.08em 0.18em 0.04em;
-            border: 1.5px solid var(--ink);
-            background: var(--cream-deep);
-            font-style: italic;
-            font-variation-settings: 'opsz' 144, 'SOFT' 100;
-        }
-        .hero-title .window::before {
-            /* tiny "corner marks" suggesting a viewport / context window */
-            content: "";
-            position: absolute;
-            top: -3px; left: -3px; right: -3px; bottom: -3px;
-            border: 1px solid var(--accent);
-            opacity: 0.4;
-            pointer-events: none;
-        }
-        .hero-title .beyond {
-            display: block;
-            color: var(--accent);
-            font-style: italic;
-            font-weight: 400;
-            font-variation-settings: 'opsz' 144, 'SOFT' 100;
+            max-width: 14ch;
+            font-variation-settings: normal;
         }
         .hero-subtitle {
-            font-family: var(--font-display);
-            font-style: italic;
-            font-size: clamp(1.05rem, 2vw, 1.35rem);
+            font-family: var(--font-body);
+            font-size: clamp(1.05rem, 1.6vw, 1.2rem);
             color: var(--ink-soft);
-            max-width: 50ch;
-            margin: 2rem 0 0;
-            line-height: 1.4;
-            font-variation-settings: 'opsz' 36, 'SOFT' 100;
-        }
-        /* Decorative right column of the hero - schematic of context window */
-        .hero-schematic {
-            position: absolute;
-            top: 5.5rem;
-            right: 2rem;
-            width: 180px;
-            height: 240px;
-            display: none;
-            pointer-events: none;
-            opacity: 0.85;
-        }
-        @media (min-width: 1000px) {
-            .hero-schematic { display: block; }
+            max-width: 52ch;
+            margin: 1.75rem 0 0;
+            line-height: 1.5;
         }
 
         /* ── Section scaffolding ──────────────────────────────────────────── */
@@ -257,18 +216,16 @@
             background: var(--rule);
         }
         .section-title {
-            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+            font-size: clamp(1.5rem, 2.5vw, 1.9rem);
             margin-bottom: 1.5rem;
-            font-variation-settings: 'opsz' 96, 'SOFT' 50;
+            font-variation-settings: normal;
         }
         .lead {
-            font-family: var(--font-display);
-            font-style: italic;
-            font-size: 1.25rem;
-            line-height: 1.5;
-            color: var(--ink-soft);
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--ink);
             max-width: 60ch;
-            font-variation-settings: 'opsz' 36, 'SOFT' 100;
         }
 
         /* ── About / Topics ───────────────────────────────────────────────── */
@@ -336,8 +293,9 @@
         }
         .dates-table .label {
             font-family: var(--font-display);
-            font-size: 1.15rem;
-            font-variation-settings: 'opsz' 96, 'SOFT' 50;
+            font-size: 1.1rem;
+            font-weight: 500;
+            font-variation-settings: normal;
         }
         .dates-table .label small {
             display: block;
@@ -404,17 +362,17 @@
             justify-content: center;
             font-family: var(--font-display);
             color: var(--ink-faint);
-            font-size: 1.5rem;
-            font-style: italic;
+            font-size: 1.4rem;
+            font-weight: 500;
         }
         .person-card .info { min-width: 0; }
         .person-card .name {
             font-family: var(--font-display);
-            font-size: 1.15rem;
-            font-weight: 600;
+            font-size: 1.1rem;
+            font-weight: 500;
             line-height: 1.2;
-            margin: 0 0 0.2rem;
-            font-variation-settings: 'opsz' 96, 'SOFT' 50;
+            margin: 0 0 0.25rem;
+            font-variation-settings: normal;
         }
         .person-card .name a { text-decoration: none; }
         .person-card .name a:hover { color: var(--accent); }
@@ -442,7 +400,7 @@
             width: 130px;
             height: 130px;
         }
-        .people-grid.speakers .person-card .name { font-size: 1.4rem; }
+        .people-grid.speakers .person-card .name { font-size: 1.25rem; }
         .people-grid.speakers .person-card .bio { font-size: 0.95rem; }
 
         /* Senior organizer subtle marker */
@@ -499,10 +457,10 @@
             white-space: nowrap;
         }
         .schedule .who {
-            font-family: var(--font-display);
-            font-size: 1rem;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
             color: var(--ink);
-            font-variation-settings: 'opsz' 36, 'SOFT' 30;
         }
         @media (max-width: 699px) {
             .schedule .who { font-size: 0.95rem; }
@@ -531,10 +489,10 @@
         }
         .schedule .session-row .session-name {
             font-family: var(--font-display);
-            font-style: italic;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            font-weight: 500;
             color: var(--ink);
-            font-variation-settings: 'opsz' 36, 'SOFT' 100;
+            font-variation-settings: normal;
         }
         .schedule .break-row .what { color: var(--ink-faint); font-style: italic; }
 
@@ -556,11 +514,13 @@
             gap: 0.5rem;
         }
         .cfp-subsection h3::before {
-            content: "§";
-            color: var(--accent);
-            font-family: var(--font-display);
-            font-style: italic;
-            font-size: 1.1rem;
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 1px;
+            background: var(--accent);
+            vertical-align: middle;
+            margin-right: 0.1rem;
         }
         .cfp-subsection p {
             font-size: 0.97rem;
@@ -585,12 +545,12 @@
         }
         .cfp-cta .cta-text {
             font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-style: italic;
+            font-size: 1.2rem;
+            font-weight: 500;
             margin: 0;
-            max-width: 32ch;
+            max-width: 36ch;
             color: var(--cream);
-            font-variation-settings: 'opsz' 36, 'SOFT' 100;
+            font-variation-settings: normal;
         }
         .cfp-cta a.button {
             display: inline-block;
@@ -624,11 +584,11 @@
         .contact-card .left p { margin: 0; max-width: 36ch; }
         .contact-card .left p.headline {
             font-family: var(--font-display);
-            font-style: italic;
-            font-size: 1.35rem;
+            font-size: 1.2rem;
+            font-weight: 500;
             color: var(--ink);
             margin-bottom: 0.4rem;
-            font-variation-settings: 'opsz' 36, 'SOFT' 100;
+            font-variation-settings: normal;
         }
         .contact-card a.email-link {
             font-family: var(--font-mono);
@@ -725,73 +685,10 @@
             <span class="dot"></span>
             <span>San Francisco</span>
         </div>
-        <h1 class="hero-title">
-            <span class="window">Context</span>
-            <span class="beyond">Beyond the Window</span>
-        </h1>
+        <h1 class="hero-title">Context Beyond the Window</h1>
         <p class="hero-subtitle">
             Compression, accumulation, and internalization of knowledge in language models.
         </p>
-
-        <!-- Decorative SVG: schematic of a context window with overflow -->
-        <svg class="hero-schematic" viewBox="0 0 180 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <!-- ticks above -->
-            <g stroke="#6F7588" stroke-width="0.8">
-                <line x1="20" y1="14" x2="20" y2="20"/>
-                <line x1="50" y1="14" x2="50" y2="20"/>
-                <line x1="80" y1="14" x2="80" y2="20"/>
-                <line x1="110" y1="14" x2="110" y2="20"/>
-                <line x1="140" y1="14" x2="140" y2="20"/>
-                <line x1="170" y1="14" x2="170" y2="20"/>
-            </g>
-            <text x="0" y="10" font-family="IBM Plex Mono" font-size="7" fill="#6F7588" letter-spacing="0.5">CONTEXT</text>
-            <!-- main window rectangle -->
-            <rect x="20" y="30" width="120" height="140" stroke="#1A2238" stroke-width="1.5" fill="none"/>
-            <!-- bracket label -->
-            <text x="22" y="42" font-family="IBM Plex Mono" font-size="6" fill="#1A2238">in&#8209;window</text>
-            <!-- bars inside (memory tokens) -->
-            <g fill="#1A2238" opacity="0.85">
-                <rect x="30" y="55" width="38" height="3"/>
-                <rect x="30" y="62" width="64" height="3"/>
-                <rect x="30" y="69" width="48" height="3"/>
-                <rect x="30" y="76" width="80" height="3"/>
-                <rect x="30" y="83" width="54" height="3"/>
-                <rect x="30" y="90" width="72" height="3"/>
-                <rect x="30" y="97" width="42" height="3"/>
-                <rect x="30" y="104" width="68" height="3"/>
-                <rect x="30" y="111" width="58" height="3"/>
-                <rect x="30" y="118" width="76" height="3"/>
-                <rect x="30" y="125" width="48" height="3"/>
-                <rect x="30" y="132" width="62" height="3"/>
-                <rect x="30" y="139" width="40" height="3"/>
-                <rect x="30" y="146" width="70" height="3"/>
-                <rect x="30" y="153" width="52" height="3"/>
-                <rect x="30" y="160" width="44" height="3"/>
-            </g>
-            <!-- overflow tokens spilling out -->
-            <g fill="#D6502A" opacity="0.8">
-                <rect x="145" y="62" width="20" height="3"/>
-                <rect x="148" y="76" width="14" height="3"/>
-                <rect x="146" y="90" width="22" height="3"/>
-                <rect x="150" y="104" width="12" height="3"/>
-                <rect x="144" y="118" width="26" height="3" opacity="0.6"/>
-                <rect x="149" y="132" width="16" height="3" opacity="0.5"/>
-                <rect x="146" y="146" width="20" height="3" opacity="0.4"/>
-                <rect x="150" y="160" width="10" height="3" opacity="0.3"/>
-            </g>
-            <!-- bracket label for overflow -->
-            <text x="142" y="182" font-family="IBM Plex Mono" font-size="6" fill="#D6502A">beyond&#8209;window</text>
-            <!-- arrow + tick below -->
-            <g stroke="#1A2238" stroke-width="0.8">
-                <line x1="20" y1="180" x2="140" y2="180"/>
-                <polyline points="135,177 140,180 135,183" fill="none"/>
-            </g>
-            <text x="20" y="195" font-family="IBM Plex Mono" font-size="6" fill="#6F7588">k tokens</text>
-            <!-- weight memory label -->
-            <text x="0" y="218" font-family="IBM Plex Mono" font-size="7" fill="#6F7588" letter-spacing="0.5">WEIGHTS</text>
-            <rect x="20" y="222" width="140" height="14" fill="#1A2238" opacity="0.15"/>
-            <text x="62" y="232" font-family="IBM Plex Mono" font-size="6" fill="#1A2238" font-style="italic">internalized</text>
-        </svg>
     </div>
 </header>
 
@@ -802,8 +699,6 @@
             <span>About</span>
             <span class="rule"></span>
         </div>
-        <h2 class="section-title">The trade-off between context-time and weight-time memory.</h2>
-
         <div class="about-grid">
             <div>
                 <p class="lead">
@@ -844,7 +739,6 @@
             <span>Important Dates</span>
             <span class="rule"></span>
         </div>
-        <h2 class="section-title">Mark the calendar.</h2>
 
         <div class="dates-table">
             <div class="row">
@@ -875,7 +769,6 @@
             <span>Invited Speakers</span>
             <span class="rule"></span>
         </div>
-        <h2 class="section-title">Six perspectives, one bottleneck.</h2>
 
         <div class="people-grid speakers">
             <div class="person-card">
@@ -942,7 +835,6 @@
             <span>Schedule</span>
             <span class="rule"></span>
         </div>
-        <h2 class="section-title">A single day, four sessions.</h2>
 
         <div class="schedule">
             <div class="row"><div class="time">9:00 – 9:10</div><div class="who">Organizers</div><div class="what">Welcome remarks</div></div>
@@ -978,7 +870,6 @@
             <span>Call for Papers</span>
             <span class="rule"></span>
         </div>
-        <h2 class="section-title">Submissions open; OpenReview is live.</h2>
 
         <div class="cfp-subsection">
             <h3>Submission format</h3>
@@ -1023,7 +914,7 @@
         </div>
 
         <div class="cfp-cta">
-            <p class="cta-text">Ready to submit? The OpenReview portal is open until June 23, 2026.</p>
+            <p class="cta-text">The OpenReview submission portal is open until June 23, 2026.</p>
             <a class="button" href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/CBW">Open OpenReview ↗</a>
         </div>
     </div>
@@ -1036,7 +927,6 @@
             <span>Organizers</span>
             <span class="rule"></span>
         </div>
-        <h2 class="section-title">Ten organizers across Mila, MIT, Princeton, DeepMind, and beyond.</h2>
 
         <div class="subgroup-heading">
             <span>Senior organizers</span>
@@ -1143,8 +1033,8 @@
         </div>
         <div class="contact-card">
             <div class="left">
-                <p class="headline">Got a question? Email us.</p>
-                <p>For submission questions, sponsorship enquiries, accessibility requests, or anything else, the organizers read every email.</p>
+                <p class="headline">Email the organizers.</p>
+                <p>For submission questions, sponsorship enquiries, accessibility requests, or anything else.</p>
             </div>
             <a class="email-link" href="mailto:colm-context-beyond-window@googlegroups.com">colm-context-beyond-window@googlegroups.com</a>
         </div>
