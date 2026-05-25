@@ -9,6 +9,7 @@
     <meta property="og:description" content="A workshop on the full spectrum of context management in language models: fitting more into the window, maintaining state across interactions, and transferring knowledge into parameters.">
     <meta property="og:type" content="website">
 
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -860,11 +861,20 @@
             </div>
 
             <div class="person-card">
-                <img class="photo" src="images/people/albert-gu.jpg" alt="Albert Gu" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>AG</text></svg>'">
+                <img class="photo" src="images/people/albert-gu.png" alt="Albert Gu" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>AG</text></svg>'">
                 <div class="info">
                     <p class="name"><a href="https://albertgu.com/">Albert Gu</a></p>
                     <p class="aff">CMU · Cartesia AI</p>
                     <p class="bio">Assistant professor of ML at CMU and co-founder / chief scientist of Cartesia AI; PhD from Stanford. Lead author of the S4 and Mamba state-space-model papers, foundational to how context can be compressed and managed beyond the transformer paradigm. TIME100 AI (2024).</p>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img class="photo" src="images/people/alessandro-sordoni.jpg" alt="Alessandro Sordoni" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>AS</text></svg>'">
+                <div class="info">
+                    <p class="name"><a href="https://www.microsoft.com/en-us/research/people/alsordon/">Alessandro Sordoni</a></p>
+                    <p class="aff">Microsoft Research · Mila</p>
+                    <p class="bio">Principal researcher at Microsoft Research Montréal and associate member at Mila; PhD from UdeM. Works on language models, reasoning, and learning algorithms for modular and compositional generalization &mdash; including work on context efficiency, in-context learning, and chain-of-thought.</p>
                 </div>
             </div>
         </div>
@@ -936,6 +946,25 @@
         </div>
 
         <div class="cfp-subsection">
+            <h3>Topics we accept</h3>
+            <p>We welcome submissions across the full spectrum of context management in language models, including but not limited to:</p>
+            <ul>
+                <li>Context compression and summarization</li>
+                <li>Long-context and infinite-context architectures</li>
+                <li>Memory-augmented and recurrent models</li>
+                <li>KV cache optimization</li>
+                <li>Retrieval-augmented generation</li>
+                <li>Multi-turn and multi-session context management</li>
+                <li>Agentic memory and orchestration</li>
+                <li>Knowledge distillation and internalization</li>
+                <li>Continual and lifelong learning</li>
+                <li>State space models</li>
+                <li>Test-time training and memorization</li>
+                <li>Benchmarks and evaluation</li>
+            </ul>
+        </div>
+
+        <div class="cfp-subsection">
             <h3>Review process</h3>
             <p>Each submission will receive at least two reviews. The process is double-blind: author identities and affiliations must be removed from the manuscript, and citations to the authors' own prior work should be anonymized where they would otherwise reveal identity. Organizers will not review papers for which they have a conflict of interest. Accepted work will be presented as contributed talks or posters, with oral slots selected to ensure strong representation of junior researchers.</p>
         </div>
@@ -968,37 +997,6 @@
             <span class="num">§06</span>
             <span>Organizers</span>
             <span class="rule"></span>
-        </div>
-
-        <div class="subgroup-heading">
-            <span>Senior organizers</span>
-            <span class="rule"></span>
-        </div>
-        <div class="people-grid organizers">
-            <div class="person-card">
-                <img class="photo" src="images/people/guillaume-lajoie.jpg" alt="Guillaume Lajoie" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>GL</text></svg>'">
-                <div class="info">
-                    <p class="name"><a href="https://www.guillaumelajoie.com/">Guillaume Lajoie</a></p>
-                    <p class="aff">Mila · UdeM · Google Research</p>
-                    <p class="bio">Associate professor at UdeM and core member of Mila; Canada CIFAR AI Chair and Canada Research Chair in Neural Computation. Works on mechanisms of intelligence common to biological and artificial systems via dynamical systems and information theory.</p>
-                </div>
-            </div>
-            <div class="person-card">
-                <img class="photo" src="images/people/martin-klissarov.jpg" alt="Martin Klissarov" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>MK</text></svg>'">
-                <div class="info">
-                    <p class="name">Martin Klissarov</p>
-                    <p class="aff">Google DeepMind · McGill · Mila</p>
-                    <p class="bio">Research scientist at Google DeepMind finishing his PhD at McGill / Mila under Doina Precup and Marlos Machado. Works on RL and LLM agents — intrinsic motivation, meta-learning, and self-directed learning drives.</p>
-                </div>
-            </div>
-            <div class="person-card">
-                <img class="photo" src="images/people/danqi-chen.jpg" alt="Danqi Chen" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>DC</text></svg>'">
-                <div class="info">
-                    <p class="name"><a href="https://www.cs.princeton.edu/~danqic/">Danqi Chen</a></p>
-                    <p class="aff">Princeton CS · Thinking Machines</p>
-                    <p class="bio">Associate professor at Princeton (on sabbatical at Thinking Machines Lab) co-leading the Princeton NLP Group. Research spans the full LM life cycle — pre-training, alignment, retrieval, and efficient deployment.</p>
-                </div>
-            </div>
         </div>
 
         <div class="subgroup-heading">
@@ -1060,6 +1058,37 @@
                     <p class="name">Alicia Sun</p>
                     <p class="aff">Reflection AI</p>
                     <p class="bio">Researcher at Reflection AI, working on the systems and training infrastructure behind long-context language models.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subgroup-heading">
+            <span>Senior organizers</span>
+            <span class="rule"></span>
+        </div>
+        <div class="people-grid organizers">
+            <div class="person-card">
+                <img class="photo" src="images/people/guillaume-lajoie.jpg" alt="Guillaume Lajoie" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>GL</text></svg>'">
+                <div class="info">
+                    <p class="name"><a href="https://www.guillaumelajoie.com/">Guillaume Lajoie</a></p>
+                    <p class="aff">Mila · UdeM · Google Research</p>
+                    <p class="bio">Associate professor at UdeM and core member of Mila; Canada CIFAR AI Chair and Canada Research Chair in Neural Computation. Works on mechanisms of intelligence common to biological and artificial systems via dynamical systems and information theory.</p>
+                </div>
+            </div>
+            <div class="person-card">
+                <img class="photo" src="images/people/martin-klissarov.jpg" alt="Martin Klissarov" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>MK</text></svg>'">
+                <div class="info">
+                    <p class="name">Martin Klissarov</p>
+                    <p class="aff">Google DeepMind · McGill · Mila</p>
+                    <p class="bio">Research scientist at Google DeepMind finishing his PhD at McGill / Mila under Doina Precup and Marlos Machado. Works on RL and LLM agents — intrinsic motivation, meta-learning, and self-directed learning drives.</p>
+                </div>
+            </div>
+            <div class="person-card">
+                <img class="photo" src="images/people/danqi-chen.jpg" alt="Danqi Chen" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>DC</text></svg>'">
+                <div class="info">
+                    <p class="name"><a href="https://www.cs.princeton.edu/~danqic/">Danqi Chen</a></p>
+                    <p class="aff">Princeton CS · Thinking Machines</p>
+                    <p class="bio">Associate professor at Princeton (on sabbatical at Thinking Machines Lab) co-leading the Princeton NLP Group. Research spans the full LM life cycle — pre-training, alignment, retrieval, and efficient deployment.</p>
                 </div>
             </div>
         </div>
