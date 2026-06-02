@@ -229,6 +229,30 @@
             margin: 1.75rem 0 0;
             line-height: 1.5;
         }
+        .hero-cta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            margin-top: 2.5rem;
+        }
+        .hero-cta a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4em;
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 0.85rem 1.5rem;
+            border-radius: 2px;
+            text-decoration: none;
+            transition: background 0.15s, color 0.15s;
+        }
+        .hero-cta a.primary { background: var(--accent); color: var(--cream); }
+        .hero-cta a.primary:hover { background: var(--accent-soft); }
+        .hero-cta a.secondary { color: var(--accent); border: 1px solid var(--accent); }
+        .hero-cta a.secondary:hover { background: var(--accent); color: var(--cream); }
 
         /* ── Section scaffolding ──────────────────────────────────────────── */
         section.block {
@@ -712,6 +736,10 @@
             <a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/CBW">The OpenReview submission portal is open until June 22, 2026.</a>
         </span>
         <span class="item">
+            <span class="pin">★</span>
+            <a href="https://docs.google.com/forms/d/168bJDbtHYVbxKbse_FFbnFLV_WqgR6YlmTWNt8EsVpc/viewform">Sign up to review →</a>
+        </span>
+        <span class="item">
             <span class="pin">✉</span>
             <a href="mailto:colm-context-beyond-window@googlegroups.com">colm-context-beyond-window@googlegroups.com</a>
         </span>
@@ -746,6 +774,10 @@
         <p class="hero-subtitle">
             Compression, accumulation, and internalization of knowledge in language models.
         </p>
+        <div class="hero-cta">
+            <a class="primary" href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/CBW">Submit via OpenReview ↗</a>
+            <a class="secondary" href="https://docs.google.com/forms/d/168bJDbtHYVbxKbse_FFbnFLV_WqgR6YlmTWNt8EsVpc/viewform">Sign up to review ↗</a>
+        </div>
     </div>
 </header>
 
