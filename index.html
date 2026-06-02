@@ -608,6 +608,9 @@
             transition: background 0.15s;
         }
         .cfp-cta a.button:hover { background: var(--accent-soft); }
+        .cfp-cta .cta-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+        .cfp-cta a.button.button-alt { background: transparent; box-shadow: inset 0 0 0 1px var(--accent); }
+        .cfp-cta a.button.button-alt:hover { background: var(--accent); }
 
         /* ── Contact ──────────────────────────────────────────────────────── */
         .contact-card {
@@ -878,6 +881,15 @@
                     <p class="bio">Principal researcher at Microsoft Research Montréal and associate member at Mila; PhD from UdeM. Works on language models, reasoning, and learning algorithms for modular and compositional generalization &mdash; including work on context efficiency, in-context learning, and chain-of-thought.</p>
                 </div>
             </div>
+
+            <div class="person-card">
+                <img class="photo" src="images/people/rishabh-agarwal.jpg" alt="Rishabh Agarwal" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>RA</text></svg>'">
+                <div class="info">
+                    <p class="name"><a href="https://agarwl.github.io/">Rishabh Agarwal</a></p>
+                    <p class="aff">Periodic Labs · McGill</p>
+                    <p class="bio">Founding member at Periodic Labs and adjunct professor at McGill; previously a staff research scientist at Google DeepMind, with a PhD from Mila. Core contributor to the Gemma and Gemini models and creator of on-policy distillation for LLMs; NeurIPS outstanding paper award for rigorous evaluation in reinforcement learning. His work on distillation and RL post-training bears directly on how knowledge is internalized into model weights rather than retrieved at inference.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -976,6 +988,11 @@
         </div>
 
         <div class="cfp-subsection">
+            <h3>Call for reviewers</h3>
+            <p>We are recruiting reviewers from the broader community. If you work on long-context modeling, retrieval, efficient architectures, continual or test-time training, agentic memory, or evaluation, we would be grateful for your help. Reviewing runs between the submission deadline and notifications, and no reviewer is assigned more than five papers. To volunteer, <a href="https://docs.google.com/forms/d/168bJDbtHYVbxKbse_FFbnFLV_WqgR6YlmTWNt8EsVpc/viewform">fill out the reviewer sign-up form</a>.</p>
+        </div>
+
+        <div class="cfp-subsection">
             <h3>Dual submission</h3>
             <p>Concurrent submission to other venues is allowed. Because this workshop is non-archival, accepting a paper here does not preclude its later publication elsewhere, and authors are not required to withdraw the paper from other concurrent review processes.</p>
         </div>
@@ -987,7 +1004,10 @@
 
         <div class="cfp-cta">
             <p class="cta-text">The OpenReview submission portal is open until June 22, 2026.</p>
-            <a class="button" href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/CBW">Open OpenReview ↗</a>
+            <div class="cta-actions">
+                <a class="button" href="https://openreview.net/group?id=colmweb.org/COLM/2026/Workshop/CBW">Open OpenReview ↗</a>
+                <a class="button button-alt" href="https://docs.google.com/forms/d/168bJDbtHYVbxKbse_FFbnFLV_WqgR6YlmTWNt8EsVpc/viewform">Sign up to review ↗</a>
+            </div>
         </div>
     </div>
 </section>
