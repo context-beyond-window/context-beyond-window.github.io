@@ -636,6 +636,26 @@
         .cfp-cta a.button.button-alt { background: transparent; box-shadow: inset 0 0 0 1px var(--accent); }
         .cfp-cta a.button.button-alt:hover { background: var(--accent); }
 
+        /* ── Sponsors ─────────────────────────────────────────────────────── */
+        .sponsor-row {
+            display: flex;
+            align-items: center;
+            gap: 3.5rem;
+            flex-wrap: wrap;
+        }
+        .sponsor-row .sponsor {
+            display: inline-flex;
+            opacity: 0.9;
+            transition: opacity .15s ease;
+        }
+        .sponsor-row .sponsor:hover { opacity: 1; }
+        .sponsor-row .sponsor img { height: 48px; width: auto; display: block; }
+        .sponsor-foot {
+            margin: 2.25rem 0 0;
+            font-size: 0.95rem;
+            color: var(--ink-faint);
+        }
+
         /* ── Contact ──────────────────────────────────────────────────────── */
         .contact-card {
             margin-top: 2.5rem;
@@ -756,6 +776,7 @@
             <a href="#schedule">Schedule</a>
             <a href="#cfp">CFP</a>
             <a href="#organizers">Organizers</a>
+            <a href="#sponsors">Sponsors</a>
         </div>
         <a class="contact" href="mailto:colm-context-beyond-window@googlegroups.com" aria-label="Email the organizers">contact</a>
     </div>
@@ -904,6 +925,15 @@
                     <p class="bio">Founding member at Periodic Labs and adjunct professor at McGill; previously a staff research scientist at Google DeepMind, with a PhD from Mila. Core contributor to the Gemma and Gemini models and creator of on-policy distillation for LLMs; NeurIPS outstanding paper award for rigorous evaluation in reinforcement learning. His work on distillation and RL post-training bears directly on how knowledge is internalized into model weights rather than retrieved at inference.</p>
                 </div>
             </div>
+
+            <div class="person-card">
+                <img class="photo" src="images/people/sabri-eyuboglu.jpg" alt="Sabri Eyuboglu" onerror="this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F2EBDB%22/><text x=%2250%22 y=%2258%22 font-family=%22Georgia%22 font-size=%2236%22 font-style=%22italic%22 fill=%22%236F7588%22 text-anchor=%22middle%22>SE</text></svg>'">
+                <div class="info">
+                    <p class="name"><a href="https://sabrieyuboglu.com/">Sabri Eyuboglu</a></p>
+                    <p class="aff">Engram · Stanford</p>
+                    <p class="bio">Co-founder and CTO of Engram; PhD candidate in the Stanford Machine Learning Group advised by Chris Ré and James Zou. Lead author of Cartridges, which distills long corpora into compact trained KV-cache representations via self-study, and co-creator of Minions, pairing on-device and cloud language models. His research sits at the center of the workshop's question: how knowledge is compressed and internalized beyond the raw context window.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -935,7 +965,7 @@
             <div class="row break-row"><div class="time">2:10 – 3:10</div><div class="who"></div><div class="what">Poster session 2 + coffee</div></div>
 
             <div class="session-row"><span class="session-num">Session 4</span><span class="session-name">Synthesis</span></div>
-            <div class="row"><div class="time">3:10 – 3:40</div><div class="who">TBA</div><div class="what">Invited talk</div></div>
+            <div class="row"><div class="time">3:10 – 3:40</div><div class="who">Sabri Eyuboglu</div><div class="what">Invited talk</div></div>
             <div class="row"><div class="time">3:40 – 4:25</div><div class="who">All speakers</div><div class="what">Panel: <em>The Memory Bottleneck</em></div></div>
             <div class="row"><div class="time">4:25 – 4:40</div><div class="who">Organizers</div><div class="what">Closing remarks &amp; best-paper award</div></div>
         </div>
@@ -1130,10 +1160,26 @@
     </div>
 </section>
 
-<section class="block" id="contact">
+<section class="block" id="sponsors">
     <div class="wrap">
         <div class="section-label">
             <span class="num">§07</span>
+            <span>Sponsors</span>
+            <span class="rule"></span>
+        </div>
+        <div class="sponsor-row">
+            <a class="sponsor" href="https://engram.com/" aria-label="Engram">
+                <img src="images/engram.svg" alt="Engram">
+            </a>
+        </div>
+        <p class="sponsor-foot">Interested in sponsoring the workshop? <a href="mailto:colm-context-beyond-window@googlegroups.com">Get in touch</a>.</p>
+    </div>
+</section>
+
+<section class="block" id="contact">
+    <div class="wrap">
+        <div class="section-label">
+            <span class="num">§08</span>
             <span>Contact</span>
             <span class="rule"></span>
         </div>
