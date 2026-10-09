@@ -125,6 +125,21 @@
             font-weight: 600;
         }
 
+        .venue-banner {
+            background: var(--accent);
+            color: var(--cream);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        .venue-banner .wrap { padding: 0.7rem var(--gutter); }
+        .venue-banner a {
+            color: var(--cream);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
         /* ── Top bar ──────────────────────────────────────────────────────── */
         .topbar {
             position: sticky;
@@ -742,6 +757,12 @@
     </style>
 </head>
 <body>
+
+<div class="venue-banner">
+    <div class="wrap">
+        The workshop starts at 9:00 AM in Continental Ballroom 5 at the Hilton Union Square. <a href="#schedule">See the schedule →</a>
+    </div>
+</div>
 
 <div class="announce">
     <div class="wrap">
