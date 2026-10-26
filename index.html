@@ -135,21 +135,6 @@
             font-weight: 600;
         }
 
-        .venue-banner {
-            background: var(--accent);
-            color: var(--cream);
-            font-family: var(--font-body);
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-align: center;
-        }
-        .venue-banner .wrap { padding: 0.9rem var(--gutter); }
-        .venue-banner a {
-            color: var(--cream);
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-
         /* ── Top bar ──────────────────────────────────────────────────────── */
         .topbar {
             position: sticky;
@@ -738,6 +723,22 @@
             margin-right: 0.5em;
         }
 
+        /* ── Reviewers ────────────────────────────────────────────────────── */
+        .reviewer-intro { color: var(--ink-soft); margin: 0 0 1.75rem; }
+        .reviewer-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            columns: 3 14rem;
+            column-gap: 2rem;
+        }
+        .reviewer-list li {
+            break-inside: avoid;
+            padding: 0.3rem 0;
+            border-bottom: 1px solid var(--rule);
+            font-size: 0.95rem;
+        }
+
         /* ── Mobile refinements ─────────────────────────────────────────── */
         @media (max-width: 600px) {
             :root { --gutter: 1.25rem; }
@@ -768,12 +769,6 @@
 </head>
 <body>
 
-<div class="venue-banner">
-    <div class="wrap">
-        The workshop starts at 9:00 AM today in Continental Ballroom 5 at the Hilton Union Square. <a href="#schedule">See the schedule →</a>
-    </div>
-</div>
-
 <div class="announce">
     <div class="wrap">
         <span class="item">
@@ -802,6 +797,7 @@
             <a href="#cfp">CFP</a>
             <a href="#organizers">Organizers</a>
             <a href="#sponsors">Sponsors</a>
+            <a href="#reviewers">Reviewers</a>
         </div>
         <a class="contact" href="mailto:colm-context-beyond-window@googlegroups.com" aria-label="Email the organizers">contact</a>
     </div>
@@ -1223,6 +1219,66 @@
             </div>
             <a class="email-link" href="mailto:colm-context-beyond-window@googlegroups.com">colm-context-beyond-window@googlegroups.com</a>
         </div>
+    </div>
+</section>
+
+<section class="block" id="reviewers">
+    <div class="wrap">
+        <div class="section-label">
+            <span class="num">§09</span>
+            <span>Reviewers</span>
+            <span class="rule"></span>
+        </div>
+        <p class="reviewer-intro">We thank the following reviewers for their time and thoughtful feedback on workshop submissions.</p>
+        <ul class="reviewer-list">
+            <li>Mikhail L Arbuzov</li>
+            <li>Karthika Arumugam</li>
+            <li>Spandana Balumuri</li>
+            <li>Amlaan Bhoi</li>
+            <li>Anirudh Buvanesh</li>
+            <li>Manu Chemudupati</li>
+            <li>Yihang Chen</li>
+            <li>Alexander Chernyavskiy</li>
+            <li>Somsubhra De</li>
+            <li>Nishi Doshi</li>
+            <li>Madhava Gaikwad</li>
+            <li>Aniruddha Ghosal</li>
+            <li>Surya Gunukula</li>
+            <li>Ishan Gupta</li>
+            <li>Maryam Haghifam</li>
+            <li>Haonan He</li>
+            <li>Parsa Idehpour</li>
+            <li>Haris Jalal</li>
+            <li>Praveenkumar Kondikoppa</li>
+            <li>Anusha Kovi</li>
+            <li>Abhilasha Lodha</li>
+            <li>Rachel Ma</li>
+            <li>Dipesh Tharu Mahato</li>
+            <li>Jalal Mahmud</li>
+            <li>Aman Mehta</li>
+            <li>Ayush Sunil Munot</li>
+            <li>Shashi Bhushan Tyamagondlu Nagabhushan</li>
+            <li>Andrei Liviu Nicolicioiu</li>
+            <li>Aarati Andrea Noronha</li>
+            <li>Sahil Pardasani</li>
+            <li>Santosh V. Patapati</li>
+            <li>Van-Thuy Phi</li>
+            <li>Tirtho Roy</li>
+            <li>Faisal Sayed</li>
+            <li>Gyanendra Shrestha</li>
+            <li>Md. Asaduzzaman Shuvo</li>
+            <li>Dhruv Sreenivas</li>
+            <li>Benjamin Therien</li>
+            <li>Suguna Varshini Velury</li>
+            <li>Thejas Venkatesh</li>
+            <li>Siddarth Venkatraman</li>
+            <li>Lucky Verma</li>
+            <li>Siddharth Vohra</li>
+            <li>Yufeng Wang</li>
+            <li>Quan Wei</li>
+            <li>Wuwei Zhang</li>
+            <li>Siming Zhao</li>
+        </ul>
     </div>
 </section>
 
